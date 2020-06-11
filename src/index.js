@@ -1,17 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import App from './App.js'
+
+
+let myname = "syed Muneeb";
+let myAge = 18;
+let cat = {
+
+      name : "baily",
+      color: "white"
+}
+
+function foo (){
+
+      return "END"
+}
+
+                  // you can pass to props like this 
+                  // you can pass number  strings bolean 
+                  // object array function  and so on
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+      <div>  <App
+
+                  name = {myname} 
+                  age  = {myAge} 
+                  obj  = {cat}
+                  blue = {true}
+                  funcName = {foo}
+
+        />  </div> ,
+
+      document.getElementById('root')
+
+)
