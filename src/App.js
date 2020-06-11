@@ -30,7 +30,7 @@ import Gate from './Gate.js'
                             <li>Gtasby</li>
                         </ul>
 
-                        <Gate isOpen = {true}/>
+                        <Gate isOpen = {false}/>
 
 
                         <MediaCard 
